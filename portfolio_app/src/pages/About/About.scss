@@ -1,0 +1,111 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {.about-us{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        width: 80%;
+        gap: 30px;
+        margin-bottom: 50px;
+
+        .left{
+            width: 400px;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 20px;
+
+            img{
+                height: 300px;
+                width: 500px;
+            }
+        }
+        .right{
+            width: 400px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            line-height: 20px;
+
+            h3{
+                font-size: 1rem;
+                color: rgb(0, 140, 255);
+            }
+            p{
+                color: gray;
+            }
+            .about-head{
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: black;
+            }
+
+        }
+
+    }
+}}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {.about-us{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        width: 60%;
+        gap: 30px;
+        margin-bottom: 50px;
+
+        .left{
+            width: 400px;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 20px;
+
+            img{
+                height: 300px;
+                width: 500px;
+            }
+        }
+        .right{
+            width: 400px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            line-height: 20px;
+
+            h3{
+                font-size: 1rem;
+                color: rgb(0, 140, 255);
+            }
+            p{
+                color: gray;
+            }
+            .about-head{
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: black;
+            }
+
+        }
+
+    }
+}}

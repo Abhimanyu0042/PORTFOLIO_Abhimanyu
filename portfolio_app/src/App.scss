@@ -1,0 +1,25 @@
+$primary-color: rgb(255, 255, 31);
+// $primary-color: rgb(0, 0, 0);
+
+@import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
+@import 'loaders.css/src/animations/ball-pulse-sync.scss';
+* {
+    cursor: none !important;
+    list-style: none;
+  }
+
+.loader-active{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    height: 50px;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
+}
+

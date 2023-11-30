@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;800&display=swap');
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Home{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 20px;
+        .home-block{
+            height: 100%;
+            width: 100%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .home-center{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                // gap: 30px;
+                .left-home{
+                    width: 550px;
+                    height: 300px;
+                    margin-right: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 15px;
+                    padding: 20px;
+                    h1{
+                        font-size: 3.5rem;
+                        // font-weight:bolder;
+        
+                        .typing{
+                            -webkit-text-stroke-width: 2px;
+                            -webkit-text-stroke-color: black;
+                            color: white;
+                            font-family:'League Spartan', sans-serif;
+                        }
+                    }
+        
+                    p{
+                        color: grey;
+                        font-size: .9rem;
+                    }
+        
+                    .links{
+                        display: flex;
+                        gap: 10px;
+                        font-size: 1.3rem;
+                        li{
+                            list-style: none;
+            
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+        
+                }
+                .right-home{
+                    width: 250px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .profile{
+                        width: 250px;
+                        height: 250px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        overflow: hidden;
+                        box-shadow: 10px 10px 30px rgb(152, 152, 152);
+                        animation: profile__animate 8s ease-in-out infinite 1s;
+
+    
+                        img{
+                            width: 160%;
+                            object-position: -10px -10px;
+                        }
+                        @keyframes profile__animate {
+                            0%{
+                                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                            }
+                            50%{
+                                border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+                            }    
+                            100%{
+                                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                            }
+                        }
+
+                    }
+                }
+            }
+            .tech-stack{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-self: flex-start;
+                gap: 30px;
+                padding: 20px 60px;
+                margin-bottom: 30px;
+    
+                img{
+                    aspect-ratio: 1/1;
+                    width: 30px;
+                }
+            }
+        }
+        
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {.Home{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .home-block{
+        height: 100%;
+        width: 60%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .home-center{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            // gap: 30px;
+            .left-home{
+                width: 550px;
+                height: 100%;
+                margin-right: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                padding: 20px;
+                h1{
+                    font-size: 3.5rem;
+                    // font-weight:bolder;
+    
+                    .typing{
+                        -webkit-text-stroke-width: 2px;
+                        -webkit-text-stroke-color: black;
+                        color: white;
+                        font-family:'League Spartan', sans-serif;
+                    }
+                }
+    
+                p{
+                    color: grey;
+                    font-size: .9rem;
+                }
+    
+                .links{
+                    display: flex;
+                    gap: 10px;
+                    font-size: 1.3rem;
+                    li{
+                        list-style: none;
+        
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+    
+            }
+            .right-home{
+                width: 250px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                .profile{
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    // border: 2px solid black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    box-shadow: 10px 10px 30px rgb(152, 152, 152);
+                    animation: profile__animate 8s ease-in-out infinite 1s;
+
+                    img{
+                        width: 160%;
+                        object-position: -10px -10px;
+                    }
+
+                    @keyframes profile__animate {
+                        0%{
+                            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                        }
+                        50%{
+                            border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+                        }    
+                        100%{
+                            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                        }
+                    }
+                }
+            }
+        }
+        .tech-stack{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-self: flex-start;
+            gap: 30px;
+            padding: 20px 60px;
+            margin-bottom: 30px;
+
+            img{
+                aspect-ratio: 1/1;
+                width: 30px;
+            }
+        }
+    }
+    
+}}
+
+
+
