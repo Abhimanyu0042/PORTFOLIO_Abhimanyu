@@ -6,20 +6,20 @@ import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
-// import { Cursor } from "custom-pointer-react";
+import { Cursor } from "custom-pointer-react";
 
 
 function App() {
 
   return (
     <>
-      {/* <Cursor
+      <Cursor
         showRing={true}
         color="#000000"
         ringSize={30}
         cursorSize={8}
         ringBorder={2}
-      />{" "} */}
+      />{" "}
         <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
