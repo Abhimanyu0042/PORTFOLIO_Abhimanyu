@@ -13,13 +13,13 @@ function App() {
 
   return (
     <>
-      <Cursor
+      {/* <Cursor
         showRing={true}
         color="#000000"
         ringSize={30}
         cursorSize={8}
         ringBorder={2}
-      />{" "}
+      />{" "} */}
         <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
