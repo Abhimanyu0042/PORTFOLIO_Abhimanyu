@@ -2,17 +2,11 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import { useNavigate } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
+
 
 function Navbar() {
-  const [isHovering, setIsHovering] = useState("");
-  const handleMouseOver = () => {
-      setIsHovering(true);
-    };
-  
-    const handleMouseOut = () => {
-      setIsHovering(false);
-      console.log(setIsHovering);
-    };
+  const [openSlider, setOpenSlider] = useState("false");
     const navigate = useNavigate();
   return (
     <div className="Navbar">
@@ -39,10 +33,10 @@ function Navbar() {
         }}>Contact</li>
       </nav>
 
-      <div className="nav-butn" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}><FaBars />
-      {isHovering && (
+      <div className="nav-butn" onClick={()=> setOpenSlider(!openSlider)}>{openSlider ? <IoClose/> : <FaBars />}
+      {openSlider && (
               <div className="hover-btn">
-              {/* <li onClick={handleMouseOut} style={{alignSelf:"flex-end", marginRight:"40px"}}>&times;</li> */}
+                <hr style={{width: "100%"}}></hr>              
               <li onClick={() => {
                     navigate("/")
                 }}>
@@ -62,6 +56,8 @@ function Navbar() {
                 <li onClick={()=>{
                   navigate("/contact")
                 }}>Contact</li>
+                                <hr style={{width: "100%"}}></hr>              
+
               </div>
       )}
       </div>

@@ -5,6 +5,7 @@
         justify-content: space-between;
         padding: 30px 40px;
         align-items: center;
+
     
         h4{
             font-size: 1.2rem;
@@ -29,6 +30,7 @@
         }
         .nav-butn{
             display: block;
+            font-size: 1rem;
 
             .hover-btn{
                 display: flex;
@@ -36,24 +38,22 @@
                 flex-wrap: nowrap;
                 position: fixed;
                 z-index: 10;
-                top: 20;
+                top: 5;
                 right: 0;
                 justify-content: center;
-                // align-items: center;
-                padding: 30px 50px 50px 30px;
-                background-color: rgb(255, 255, 255);
+                align-items: center;
+                padding: 40px 40px;
+                background-color: #1b1a1a;
+                color: white;
                 box-shadow: 10px 10px 80px rgb(51, 51, 51);
-                border: 2px solid gray;
+                // border: 2px solid gray;
                 border-radius: 5px;
                 gap: 30px;
-                margin: 20px;
-                opacity: 0;
-                animation: backInRight .6s .8s;
-                animation-fill-mode: forwards; 
+                margin: 10px;
 
                 li{
                     font-size: 1rem;
-                    font-weight: bold;
+                    font-weight: 600;
                 }
                 li:hover{
                     color:rgb(0, 140, 255);

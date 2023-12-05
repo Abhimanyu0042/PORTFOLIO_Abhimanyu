@@ -8,6 +8,7 @@
         align-items: center;
         justify-content: center;
         padding-inline: 20px;
+        margin-bottom: 30px;
         .home-block{
             height: 100%;
             width: 100%;
@@ -34,7 +35,7 @@
                     padding: 20px;
                     h1{
                         font-size: 3.5rem;
-                        // font-weight:bolder;
+                        font-weight:800;
         
                         .typing{
                             -webkit-text-stroke-width: 2px;
@@ -156,7 +157,7 @@
                 padding: 20px;
                 h1{
                     font-size: 3.5rem;
-                    // font-weight:bolder;
+                    font-weight:700;
     
                     .typing{
                         -webkit-text-stroke-width: 2px;

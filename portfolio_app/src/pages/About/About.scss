@@ -22,7 +22,9 @@
             object-fit: cover;
             overflow: hidden;
             border-radius: 20px;
-
+            opacity: 0;
+            animation: backInRight 1s 1.2s;
+            animation-fill-mode: forwards;
             img{
                 height: 300px;
                 width: 500px;
